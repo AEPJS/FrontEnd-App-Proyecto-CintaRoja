@@ -1,8 +1,33 @@
 .App {
   text-align: center;
 }
+.menu{
+  background-color: rgb(82, 149, 216);
+  margin: 0;
+ 
+  
+}
+.style-font{
+  color: white;
+  text-decoration: none;
+  padding: 6rem;  
+  font-size: 10rem;
+}
 
-.App-logo {
+
+
+.img-perro{
+ width: 100%;
+}
+
+img.historia{
+  
+}
+
+.historia{
+  font-size: 1rem;
+}
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +60,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

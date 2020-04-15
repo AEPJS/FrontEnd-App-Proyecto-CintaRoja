@@ -1,24 +1,30 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar';
+import Historia from './Historia';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div ClassName = 'menu'> 
+        <Navbar/>
+      </div>
+      <div className= 'img-perros'>
+      <img src = 'https://estag.fimagenes.com/img/4/3/B/Y/7/3BY7_900.jpg' className= 'img-perro' alt='img'/>
+      </div>
+      <div id='History'>
+      <Historia/>
+      </div>
+      <div>
+        {/* <Registro/> */}
+      </div>
+
     </div>
   );
 }
