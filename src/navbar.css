@@ -5,7 +5,8 @@
 }
 
 .font-nav{
-    color:  rgb(82, 149, 216);
+    /* color:  rgb(82, 149, 216); */
+    background-color: black !important;
 }
 .style-font{
     color: white;
