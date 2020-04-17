@@ -1,5 +1,5 @@
 .menu{
-    margin-top: 1rem;
+    margin-top: 0rem;
     background-color: rgb(82, 149, 216);   
     
 }
@@ -8,12 +8,17 @@
     /* color:  rgb(82, 149, 216); */
     background-color:  rgb(82, 149, 216) !important;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .style-font{
     color: white !important;
     text-decoration: none; 
     font-size: 1.5rem;
 
+}
+
+.logo_navbar{
+    height: 59.075px;
+    width: 59.075px;
 }
 

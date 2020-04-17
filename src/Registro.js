@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
+import './App.css';
 
-function Formulario(){
+function Formulario() {
 
     const [Foto, setFoto] = useState('');
     const [nombre, setNombre] = useState('');
@@ -10,7 +11,7 @@ function Formulario(){
     const [Rasgos, setRasgos] = useState('');
     const [Fecha, setFecha] = useState('');
     const [Zona, setZona] = useState('');
-    
+
     const onChangeInput = (event) => {
         //console.log(event);
         //console.log(event.target);
@@ -63,55 +64,58 @@ function Formulario(){
             .then((result) => {
                 console.log(result);
                 alert('¡Tu mascota se ha registrado!');
+                window.location.reload();
             }).catch((err) => {
-                console.log(err.response.data);
+                console.log(err);
                 alert('No funcionó');
             });
 
     }
 
-    return(
-        <form className="m-5" onSubmit={onSubmitHandler}>
-        <div className="form-group">
-            <label>Foto -Agrega un link que diriga a una imagen-</label>
-            <input type="text" className="form-control" id="Foto" onChange={onChangeInput} value={Foto}/>
-        </div>
-        <div className="form-group">
-            <label>Nombre</label>
-            <input type="text" className="form-control" id="nombre" onChange={onChangeInput} value={nombre}/>
-        </div>
-        <div className="form-group">
-            <label>Especie</label>
-            <input type="text" className="form-control" id="Especie"onChange={onChangeInput} value={Especie}/>
-        </div>
-        <div className="form-group">
-            <label>Raza</label>
-            <input type="text" className="form-control" id="Raza"onChange={onChangeInput} value={Raza}/>
-        </div>
-        <div className="form-group">
-            <label>Rasgos</label>
-            <input type="text" className="form-control" id="Rasgos"onChange={onChangeInput} value={Rasgos}/>
-        </div>
-        <div className="form-group">
-            <label>Fecha</label>
-            <input type="Date" className="form-control" id="Fecha"onChange={onChangeInput} value={Fecha}/>
-        </div>
-        <div className="form-group">
-            <label>Zona</label>
-            <input type="text" className="form-control" id="Zona"onChange={onChangeInput} value={Zona}/>
-        </div>
-       {/*  <div className="form-group">
+    return (
+        <div className='my-2'>
+            <form className="m-2" onSubmit={onSubmitHandler}>
+                <div className="form-group">
+                    <label>Foto -Agrega un link que diriga a una imagen-</label>
+                    <input type="text" className="form-control" id="Foto" onChange={onChangeInput} value={Foto} />
+                </div>
+                <div className="form-group">
+                    <label>Nombre</label>
+                    <input type="text" className="form-control" id="nombre" onChange={onChangeInput} value={nombre} />
+                </div>
+                <div className="form-group">
+                    <label>Especie</label>
+                    <input type="text" className="form-control" id="Especie" onChange={onChangeInput} value={Especie} />
+                </div>
+                <div className="form-group">
+                    <label>Raza</label>
+                    <input type="text" className="form-control" id="Raza" onChange={onChangeInput} value={Raza} />
+                </div>
+                <div className="form-group">
+                    <label>Rasgos</label>
+                    <input type="text" className="form-control" id="Rasgos" onChange={onChangeInput} value={Rasgos} />
+                </div>
+                <div className="form-group">
+                    <label>Fecha</label>
+                    <input type="Date" className="form-control" id="Fecha" onChange={onChangeInput} value={Fecha} />
+                </div>
+                <div className="form-group">
+                    <label>Zona</label>
+                    <input type="text" className="form-control" id="Zona" onChange={onChangeInput} value={Zona} />
+                </div>
+                {/*  <div className="form-group">
             <label>Género</label>
             <select className="form-control" id="gender" onChange={onChangeInput} value={gender}>
                 <option value="F">Femenino</option>
                 <option value="M">Masculino</option>
             </select>
         </div> */}
-        <button type='submit' >Registra tu mascota</button>
+                <button type='submit' >Registra tu mascota</button>
 
-    </form>
+            </form>
+        </div>
     )
-  
+
 };
 
 export default Formulario;

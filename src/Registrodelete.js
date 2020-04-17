@@ -17,16 +17,17 @@ function Registrodelete() {
         e.preventDefault();
         console.log('SE SUBMTEO');
         const body = {
-            _id= id
+            _id: id
         }
 
 
         console.log(body);
 
-        axios.delete(`https://database-proyecto-cintaroja.herokuapp.com/api/v1/mascotas/${body._id}`)
+        axios.delete(`https://database-proyecto-cintaroja.herokuapp.com/api/v1/mascotas/${id}`)
             .then((result) => {
                 console.log(result);
                 alert('¡Tu mascota se ha borrado de la base de datos!');
+                window.location.reload();
             }).catch((err) => {
                 console.log(err.response.data);
                 alert('No funcionó');

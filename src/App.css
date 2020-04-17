@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
@@ -14,11 +18,6 @@
 }
 
 
-
-.img-perro{
- 
-}
-
 img.historia{
   width: 80% !important;
 }
@@ -30,6 +29,70 @@ img.historia{
 .fix{
   width: 15rem;
   /* height: 20rem; */
+}
+
+.titulos{
+  line-height: 0px;
+}
+
+.registro_form{
+  height: auto;
+}
+
+.hero{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://image.freepik.com/vector-gratis/fondo-blanco-semitono_115579-724.jpg') ;
+  background-size: 100% 100% ;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.titulo_abs{
+  position: absolute;
+  z-index: 100;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.titulo_rel{
+  position: relative;
+  z-index: 100;
+}
+
+.titulo_nosotros{
+  font-size: 50px;
+  line-height: 150px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.fuente_nosotros{
+  font-size: 30px;
+}
+
+.display_cards{
+  display: flex;
+  flex-direction: row;
+}
+
+.pos_formulario{
+  padding-top: 110px;
+
+}
+
+.img-perro{
+  height: auto;
+}
+.size_form{
+  height: 0px;
+}
+
+.card_font{
+  font-size: 13px;
+  width: auto;
+}
+
+.centrar{
+  text-align: center;
 }
 /* .App-logo {
   height: 40vmin;
