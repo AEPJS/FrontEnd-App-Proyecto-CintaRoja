@@ -6,12 +6,14 @@
 
 .font-nav{
     /* color:  rgb(82, 149, 216); */
-    background-color: black !important;
+    background-color:  rgb(82, 149, 216) !important;
+    display: flex;
+    justify-content: space-around;
 }
 .style-font{
-    color: white;
+    color: white !important;
     text-decoration: none; 
     font-size: 1.5rem;
-    padding: 0;
+
 }
 
