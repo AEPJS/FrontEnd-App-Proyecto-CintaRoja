@@ -1,0 +1,29 @@
+.fixed-height {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron-height {
+  height: 100%;
+}
+
+.jumbotron-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pos_formulario {
+  padding-top: 100px;
+}
+
+.jumbotron {
+  background-image: url("https://image.freepik.com/foto-gratis/perro-pie-habitacion-amarilla-mirando-otro-lado_23-2148366945.jpg");
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: white;
+  text-shadow: 1px 1px black;
+}
