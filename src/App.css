@@ -1,130 +1,75 @@
-html{
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+html,
+body {
   scroll-behavior: smooth;
+  font-family: "Bebas Neue", cursive;
+  background-color: #ffffff;
 }
 
 .App {
   text-align: center;
 }
-.menu{
+.menu {
   background-color: rgb(82, 149, 216);
   margin: 0;
- 
-  
 }
-.style-font{
+.style-font {
   color: white;
   text-decoration: none;
   font-size: 10rem;
 }
 
-
-img.historia{
+img.historia {
   width: 80% !important;
 }
 
-.historia{
+.historia {
   font-size: 1rem;
 }
 
-.fix{
-  width: 15rem;
-  /* height: 20rem; */
-}
-
-.titulos{
+.titulos {
   line-height: 0px;
 }
 
-.registro_form{
+.registro_form {
   height: auto;
 }
 
-.hero{
-  height: 100vh;
-  width: 100vw;
-  background-image: url('https://image.freepik.com/vector-gratis/fondo-blanco-semitono_115579-724.jpg') ;
-  background-size: 100% 100% ;
+.hero {
+  background-image: url("https://image.freepik.com/vector-gratis/fondo-blanco-semitono_115579-724.jpg");
+  background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.titulo_abs{
+.titulo_abs {
   position: absolute;
   z-index: 100;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.titulo_rel{
+.titulo_rel {
   position: relative;
   z-index: 100;
 }
 
-.titulo_nosotros{
-  font-size: 50px;
-  line-height: 150px;
-  text-align: center;
-  padding-top: 30px;
-}
-
-.fuente_nosotros{
-  font-size: 30px;
-}
-
-.display_cards{
+.display_cards {
   display: flex;
   flex-direction: row;
 }
 
-.pos_formulario{
-  padding-top: 110px;
-
-}
-
-.img-perro{
+.img-perro {
   height: auto;
 }
-.size_form{
+.size_form {
   height: 0px;
 }
 
-.card_font{
-  font-size: 13px;
-  width: auto;
-}
-
-.centrar{
+.centrar {
   text-align: center;
 }
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.centered-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

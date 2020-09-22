@@ -1,0 +1,14 @@
+.menu {
+  margin-top: 0rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: larger;
+}
+
+.logo_navbar {
+  height: 59.075px;
+  width: 59.075px;
+}
+
+.navbar {
+  background-color: peru;
+}
