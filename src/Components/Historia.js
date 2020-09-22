@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../Assets/historia.css";
 
 function App() {
   return (
@@ -16,10 +16,7 @@ function App() {
           solo necesitas introducir el ID de su targeta en el formulario de la
           sección al final de la página
         </p>
-        {/*<p>Dicen que a través de la mirada se pueden trasmitir muchas cosas, en esta ocasión podremos ver todo el sufrimiento que transmite la mirada varios perritos que fueron abandonados a su suerte y que fueron marcados por el sufrimiento e indiferencia.</p>
-         */}{" "}
       </div>
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
     </div>
   );
 }

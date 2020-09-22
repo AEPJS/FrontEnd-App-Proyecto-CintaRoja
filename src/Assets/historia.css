@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+
+.titulo_nosotros {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+  color: peru;
+}
+
+.fuente_nosotros {
+  font-size: 30px;
+}
+
+@media (max-width: 414px) {
+  .fuente_nosotros {
+    font-size: 20px;
+  }
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import { HashLink as Link } from "react-router-hash-link";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import "../Assets/navbar.css";
 
@@ -27,21 +29,47 @@ function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <a className="nav-item nav-link active" href="#">
-            Home <span className="sr-only">(current)</span>
-          </a>
-          <a className="nav-item nav-link" href="#History">
-            Nosotros
-          </a>
-          <a className="nav-item nav-link" href="#perdidos">
-            Perdidos
-          </a>
-          <a className="nav-item nav-link " href="#registro">
-            Registro
-          </a>
-          <a className="nav-item nav-link " href="#encontrados">
-            ¿Ya encontraste a tu mascota?
-          </a>
+          <Router>
+            <a className="nav-item nav-link active" href="#">
+              Home <span className="sr-only">(current)</span>
+            </a>
+            <Link
+              className="nav-item nav-link"
+              to="#History"
+              scroll={(el) => {
+                const yCoordinate =
+                  el.getBoundingClientRect().top + window.pageYOffset;
+                const yOffset = -80;
+                window.scrollTo({
+                  top: yCoordinate + yOffset,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Nosotros
+            </Link>
+            <Link
+              className="nav-item nav-link"
+              to="#perdidos"
+              scroll={(el) => {
+                const yCoordinate =
+                  el.getBoundingClientRect().top + window.pageYOffset;
+                const yOffset = -80;
+                window.scrollTo({
+                  top: yCoordinate + yOffset,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Perdidos
+            </Link>
+            <a className="nav-item nav-link " href="#registro">
+              Registro
+            </a>
+            <a className="nav-item nav-link " href="#encontrados">
+              ¿Ya encontraste a tu mascota?
+            </a>
+          </Router>
         </div>
       </div>
     </nav>

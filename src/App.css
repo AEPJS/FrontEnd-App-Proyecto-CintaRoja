@@ -53,18 +53,6 @@ img.historia {
   z-index: 100;
 }
 
-.titulo_nosotros {
-  font-size: 50px;
-
-  text-align: center;
-  padding-top: 30px;
-  color: peru;
-}
-
-.fuente_nosotros {
-  font-size: 30px;
-}
-
 .display_cards {
   display: flex;
   flex-direction: row;
