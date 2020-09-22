@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashLink as Link } from "react-router-hash-link";
 
 import "./index.css";
 import App from "./App";

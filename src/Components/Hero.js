@@ -7,7 +7,7 @@ import "../Assets/hero.css";
 
 function Hero() {
   return (
-    <div className="row fixed-height">
+    <div className="row fixed-height" id="home">
       <div className="col-7 jumbotron-height px-0">
         <div className="jumbotron jumbotron-fluid jumbotron-height jumbotron-content">
           <div className="container">

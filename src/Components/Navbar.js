@@ -9,7 +9,7 @@ import "../Assets/navbar.css";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
-      <a className="navbar-brand" href="#">
+      <a className="navbar-brand" href="#home">
         <img
           className="logo_navbar"
           src="https://image.flaticon.com/icons/png/512/64/64431.png"
@@ -30,7 +30,7 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
           <Router>
-            <a className="nav-item nav-link active" href="#">
+            <a className="nav-item nav-link active" href="#home">
               Home <span className="sr-only">(current)</span>
             </a>
             <Link
@@ -63,7 +63,7 @@ function Navbar() {
             >
               Perdidos
             </Link>
-            <a className="nav-item nav-link " href="#registro">
+            <a className="nav-item nav-link " href="#home">
               Registro
             </a>
             <a className="nav-item nav-link " href="#encontrados">
